@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/alvarollopi/go/goroutines"
+	"github.com/alvarollopi/go/webserver"
 )
 
 func main() {
@@ -66,10 +64,11 @@ func main() {
 
 	//e.EjemploPanic()
 
-	go goroutines.MiNombreLentooo("Alvaro Llopi")
+	//canal1 := make(chan bool)
 
-	fmt.Println("Estoy aqui")
+	//go goroutines.MiNombreLentooo("Alvaro Llopi", canal1)
+	//defer func() { <-canal1 }()
+	//fmt.Println("Estoy aqui")
 
-	var x string
-	fmt.Scanln(&x)
+	webserver.MiWebServer()
 }
