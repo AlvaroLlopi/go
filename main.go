@@ -1,8 +1,9 @@
 package main
 
 import (
-	e "github.com/alvarollopi/go/ejer_interfaces"
-	m "github.com/alvarollopi/go/modelos"
+	"fmt"
+
+	"github.com/alvarollopi/go/goroutines"
 )
 
 func main() {
@@ -57,9 +58,18 @@ func main() {
 
 	//users.AltaUsuario()
 
-	Pedro := new(m.Hombre)
-	e.HumanosRespirando(Pedro)
+	//Pedro := new(m.Hombre)
+	//e.HumanosRespirando(Pedro)
 
-	Maria := new(m.Mujer)
-	e.HumanosRespirando(Maria)
+	//Maria := new(m.Mujer)
+	//e.HumanosRespirando(Maria)
+
+	//e.EjemploPanic()
+
+	go goroutines.MiNombreLentooo("Alvaro Llopi")
+
+	fmt.Println("Estoy aqui")
+
+	var x string
+	fmt.Scanln(&x)
 }
