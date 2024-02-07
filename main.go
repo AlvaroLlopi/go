@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/alvarollopi/go/webserver"
+	"github.com/alvarollopi/go/middleware"
 )
 
 func main() {
@@ -70,5 +70,7 @@ func main() {
 	//defer func() { <-canal1 }()
 	//fmt.Println("Estoy aqui")
 
-	webserver.MiWebServer()
+	//webserver.MiWebServer()
+
+	middleware.MiMiddleware()
 }
